@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Message Box</title>
+<style type="text/css">
+body {
+	margin-top:220px;
+	padding: 0;
+	background:url(1.jpg);
+	background-size:cover;
+	background-position:center;
+	font-family:times new roman;
+	background-image: url(langit.jpg);
+	background-color: #FFFFFF;
+}	
+.style1 {color: #FFFFFF}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body>
+<center><p>
+  <h2 class="style1">Selamat Anda telah Login</h2>
+  </p></center>
+<center>
+  <a href="login.html" class="style1">
+  <button onclick="myFunction()">Logout</button>
+  </a>
+</center>
+<p id="demo"></p>
+<script>
+function myFunction() {
+	var x;
+	if (confirm("Anda yakin ingin keluar?") == true) {
+		x = "";
+		} else {
+		x = "";
+		}
+	document.getElementById("demo").innerHTML = x;
+	}
+</script>
+</body>
+</html>
